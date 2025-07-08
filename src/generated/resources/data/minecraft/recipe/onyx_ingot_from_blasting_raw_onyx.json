@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "cookingtime": 200,
+  "experience": 0.7,
+  "group": "onyx_ingot",
+  "ingredient": "chemistria:raw_onyx",
+  "result": {
+    "count": 1,
+    "id": "chemistria:onyx_ingot"
+  }
+}
