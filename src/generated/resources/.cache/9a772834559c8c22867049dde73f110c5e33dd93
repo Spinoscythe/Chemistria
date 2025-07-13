@@ -1,8 +1,10 @@
-// 1.21.7	2025-07-08T15:00:03.4408762	Model Definitions - chemistria
+// 1.21.7	2025-07-13T23:01:09.5851351	Model Definitions - chemistria
 a0f7d1539e81265bb6cf0c6aef00d434e3800438 assets/chemistria/blockstates/deepslate_onyx_ore.json
 17ffce6387b6187fcd5ecaec2c68bab809d29195 assets/chemistria/blockstates/onyx_block.json
 47915c6e464413ef0c3e6e968714490100c3df39 assets/chemistria/blockstates/onyx_ore.json
+436483bd5f61aa9a9635b8d28c198c9ec200a145 assets/chemistria/blockstates/peat_block.json
 720db486b586dbaed8ce78679f778657df361213 assets/chemistria/blockstates/raw_onyx_block.json
+e81ecc8c512de9338ec6e1d0cfc8f6d6a70f51df assets/chemistria/items/boiler_tank.json
 e8c060699117325e775fb5f31493e1503ed6931d assets/chemistria/items/deepslate_onyx_ore.json
 67de968a9135ddc2cf4ff591bfde18515b946cb4 assets/chemistria/items/onyx_axe.json
 e22406b30bef81350e51e0acbc2b52415e629000 assets/chemistria/items/onyx_block.json
@@ -16,11 +18,14 @@ ca07d0dcb6890eb1aafb230fe19393c9304c4194 assets/chemistria/items/onyx_leggings.j
 a00cf3c6ee0c68b1ca50b15cad2360dc00192899 assets/chemistria/items/onyx_pickaxe.json
 488ecc9dbadc7058cb617c415bbe050bc5aa7c2e assets/chemistria/items/onyx_shovel.json
 2b57de4717908580eff7402717a73b121a62d7f1 assets/chemistria/items/onyx_sword.json
+712a9b8312e4ed47a5ee195a7c90f298507546a5 assets/chemistria/items/peat.json
+f742283cfd1e110268e00a0a3e82153924b2d9da assets/chemistria/items/peat_block.json
 ed208e7abfbb74065406094e5b296d1e718a5f0f assets/chemistria/items/raw_onyx.json
 cff9362a32108aff1b673945aa97d43bcbeed4c0 assets/chemistria/items/raw_onyx_block.json
 fa1a2381a2b2fd39054c128e07a1e2f9ba7cbf36 assets/chemistria/models/block/deepslate_onyx_ore.json
 29cf1965cccc520a450bfff2180f435942234873 assets/chemistria/models/block/onyx_block.json
 f58b175409904ed2d699f9944b5c652eff940a75 assets/chemistria/models/block/onyx_ore.json
+36a05eb22816de85567b071c4e848c50e1877434 assets/chemistria/models/block/peat_block.json
 a713cac8b836f8ca47dcb6c8b8eccf8f7bf2e32c assets/chemistria/models/block/raw_onyx_block.json
 aadf93f97955f2e33c264f014d9a777e227838bd assets/chemistria/models/item/onyx_axe.json
 09959ba351d350694beb96fed840474a9ee72891 assets/chemistria/models/item/onyx_boots.json
@@ -76,4 +81,5 @@ ebef52772b21c7e02d0731bf33f5d63bf77f3927 assets/chemistria/models/item/onyx_legg
 5a15afc313293e3742d6326004bb46c070bc5bdb assets/chemistria/models/item/onyx_pickaxe.json
 1d7ab5d77c3cf24dd73e8ba64bbd0359f857a9cc assets/chemistria/models/item/onyx_shovel.json
 9dbaf30ab4ef978ca3e69c4646898f08934bfb90 assets/chemistria/models/item/onyx_sword.json
+53342ec68432c4c27d115c598fed2d9b58966384 assets/chemistria/models/item/peat.json
 b9c65f56c2ecfdfb8e8dbfbcdfb2f8b5a9826902 assets/chemistria/models/item/raw_onyx.json

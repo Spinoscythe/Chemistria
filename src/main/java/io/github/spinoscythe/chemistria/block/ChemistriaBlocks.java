@@ -5,7 +5,6 @@ import io.github.spinoscythe.chemistria.item.ChemistriaItems;
 import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.DyeColor;
 import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.DropExperienceBlock;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
@@ -23,6 +22,7 @@ public final class ChemistriaBlocks {
 
     public static final DeferredBlock<DropExperienceBlock> ONYX_ORE = registerBlock("onyx_ore", properties -> new DropExperienceBlock(UniformInt.of(5, 14), properties.mapColor(DyeColor.GRAY).requiresCorrectToolForDrops()));
     public static final DeferredBlock<DropExperienceBlock> DEEPSLATE_ONYX_ORE = registerBlock("deepslate_onyx_ore", properties -> new DropExperienceBlock(UniformInt.of(5, 14), properties.mapColor(MapColor.DEEPSLATE).requiresCorrectToolForDrops()));
+
     public static final DeferredBlock<Block> ONYX_BLOCK = registerSimpleBlock("onyx_block", properties -> properties.mapColor(MapColor.METAL)
             .instrument(NoteBlockInstrument.IRON_XYLOPHONE)
             .requiresCorrectToolForDrops()
@@ -34,9 +34,8 @@ public final class ChemistriaBlocks {
             .requiresCorrectToolForDrops()
             .strength(5.0F, 6.0F));
 
-    private static DeferredBlock<DropExperienceBlock> registerOre(String name, int min, int max, BlockBehaviour.Properties properties) {
-        return registerBlock(name, p -> new DropExperienceBlock(UniformInt.of(min, max), properties));
-    }
+    public static final DeferredBlock<Block> PEAT_BLOCK = registerSimpleBlock("peat_block", properties -> properties.mapColor(MapColor.COLOR_GREEN).strength(0.5F, 2.5F).sound(SoundType.GRASS));
+    public static final DeferredBlock<BoilerTankBlock> BOILER_TANK = registerBlock("boiler_tank", properties -> new BoilerTankBlock(properties.lightLevel(state -> state.getValue(BoilerTankBlock.LIT) ? 3 : 0)));
 
     private static DeferredBlock<Block> registerSimpleBlock(String name, UnaryOperator<BlockBehaviour.Properties> properties) {
         return registerBlock(name, p -> new Block(properties.apply(p)));

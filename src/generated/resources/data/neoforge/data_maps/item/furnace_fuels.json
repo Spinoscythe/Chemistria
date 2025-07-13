@@ -1,0 +1,10 @@
+{
+  "values": {
+    "chemistria:peat": {
+      "burn_time": 1200
+    },
+    "chemistria:peat_block": {
+      "burn_time": 10800
+    }
+  }
+}

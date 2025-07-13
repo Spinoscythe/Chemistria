@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "chemistria:raw_onyx_block"
+  ],
+  "result": {
+    "count": 9,
+    "id": "chemistria:raw_onyx"
+  }
+}

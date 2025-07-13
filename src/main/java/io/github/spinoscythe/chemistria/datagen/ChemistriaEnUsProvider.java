@@ -21,15 +21,29 @@ public class ChemistriaEnUsProvider extends LanguageProvider {
         add(ChemistriaItems.ONYX_INGOT.get(), "Onyx Ingot");
         add(ChemistriaItems.RAW_ONYX.get(), "Raw Onyx");
 
+        add(ChemistriaItems.PEAT.get(), "Peat");
+
+        addToolTranslations();
+        addArmorTranslations();
+        addMachineTranslations();
+    }
+
+    private void addArmorTranslations() {
+        add(ChemistriaItems.ONYX_HELMET.get(), "Onyx Helmet");
+        add(ChemistriaItems.ONYX_CHESTPLATE.get(), "Onyx Chestplate");
+        add(ChemistriaItems.ONYX_LEGGINGS.get(), "Onyx Leggings");
+        add(ChemistriaItems.ONYX_BOOTS.get(), "Onyx Boots");
+    }
+
+    private void addToolTranslations() {
         add(ChemistriaItems.ONYX_PICKAXE.get(), "Onyx Pickaxe");
         add(ChemistriaItems.ONYX_AXE.get(), "Onyx Axe");
         add(ChemistriaItems.ONYX_SWORD.get(), "Onyx Sword");
         add(ChemistriaItems.ONYX_SHOVEL.get(), "Onyx Shovel");
         add(ChemistriaItems.ONYX_HOE.get(), "Onyx Hoe");
+    }
 
-        add(ChemistriaItems.ONYX_HELMET.get(), "Onyx Helmet");
-        add(ChemistriaItems.ONYX_CHESTPLATE.get(), "Onyx Chestplate");
-        add(ChemistriaItems.ONYX_LEGGINGS.get(), "Onyx Leggings");
-        add(ChemistriaItems.ONYX_BOOTS.get(), "Onyx Boots");
+    private void addMachineTranslations() {
+        add(ChemistriaBlocks.BOILER_TANK.get(), "Boiler Tank");
     }
 }

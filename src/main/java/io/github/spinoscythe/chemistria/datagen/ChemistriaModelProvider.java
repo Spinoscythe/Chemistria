@@ -32,6 +32,7 @@ public class ChemistriaModelProvider extends ModelProvider {
         itemModels.generateFlatItem(ChemistriaItems.RAW_ONYX.get(), ModelTemplates.FLAT_ITEM);
         itemModels.generateFlatItem(ChemistriaItems.ONYX_INGOT.get(), ModelTemplates.FLAT_ITEM);
 
+        itemModels.generateFlatItem(ChemistriaItems.PEAT.get(), ModelTemplates.FLAT_ITEM);
         itemModels.generateFlatItem(ChemistriaItems.ONYX_SWORD.get(), ModelTemplates.FLAT_HANDHELD_ITEM);
         itemModels.generateFlatItem(ChemistriaItems.ONYX_PICKAXE.get(), ModelTemplates.FLAT_HANDHELD_ITEM);
         itemModels.generateFlatItem(ChemistriaItems.ONYX_AXE.get(), ModelTemplates.FLAT_HANDHELD_ITEM);
@@ -48,6 +49,7 @@ public class ChemistriaModelProvider extends ModelProvider {
         blockModels.createTrivialCube(ChemistriaBlocks.DEEPSLATE_ONYX_ORE.get());
         blockModels.createTrivialCube(ChemistriaBlocks.ONYX_BLOCK.get());
         blockModels.createTrivialCube(ChemistriaBlocks.RAW_ONYX_BLOCK.get());
+        blockModels.createTrivialCube(ChemistriaBlocks.PEAT_BLOCK.get());
     }
 
     private static ResourceKey<EquipmentAsset> createId(String name) {
@@ -56,7 +58,7 @@ public class ChemistriaModelProvider extends ModelProvider {
 
     @Override
     protected Stream<? extends Holder<Block>> getKnownBlocks() {
-        return ChemistriaBlocks.BLOCKS.getEntries().stream();
+        return ChemistriaBlocks.BLOCKS.getEntries().stream().filter(h -> h != ChemistriaBlocks.BOILER_TANK);
     }
 
     @Override

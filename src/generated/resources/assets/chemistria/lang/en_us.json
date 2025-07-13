@@ -1,4 +1,5 @@
 {
+  "block.chemistria.boiler_tank": "Boiler Tank",
   "block.chemistria.deepslate_onyx_ore": "Deepslate Onyx Ore",
   "block.chemistria.onyx_block": "Block Of Onyx",
   "block.chemistria.onyx_ore": "Onyx Ore",
@@ -13,5 +14,6 @@
   "item.chemistria.onyx_pickaxe": "Onyx Pickaxe",
   "item.chemistria.onyx_shovel": "Onyx Shovel",
   "item.chemistria.onyx_sword": "Onyx Sword",
+  "item.chemistria.peat": "Peat",
   "item.chemistria.raw_onyx": "Raw Onyx"
 }

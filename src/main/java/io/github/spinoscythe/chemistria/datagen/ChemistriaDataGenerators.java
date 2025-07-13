@@ -1,6 +1,7 @@
 package io.github.spinoscythe.chemistria.datagen;
 
 import io.github.spinoscythe.chemistria.Chemistria;
+import io.github.spinoscythe.chemistria.enchantment.ChemistriaEnchantments;
 import io.github.spinoscythe.chemistria.item.armor.ChemistriaTrimMaterials;
 import io.github.spinoscythe.chemistria.item.armor.ChemistriaTrimPatterns;
 import io.github.spinoscythe.chemistria.worldgen.ChemistriaOreFeatures;
@@ -22,7 +23,8 @@ public final class ChemistriaDataGenerators {
             .add(Registries.CONFIGURED_FEATURE, ChemistriaOreFeatures::boostrap)
             .add(Registries.PLACED_FEATURE, ChemistriaOrePlacements::bootstrap)
             .add(Registries.TRIM_MATERIAL, ChemistriaTrimMaterials::bootstrap)
-            .add(Registries.TRIM_PATTERN, ChemistriaTrimPatterns::bootstrap);
+            .add(Registries.TRIM_PATTERN, ChemistriaTrimPatterns::bootstrap)
+            .add(Registries.ENCHANTMENT, ChemistriaEnchantments::bootstrap);
 
     private static final List<LootTableProvider.SubProviderEntry> SUB_PROVIDER_ENTRIES = List.of(
             new LootTableProvider.SubProviderEntry(ChemistriaBlockLoot::new, LootContextParamSets.BLOCK)
@@ -36,6 +38,7 @@ public final class ChemistriaDataGenerators {
         event.addProvider(new ChemistriaRecipeProvider.Runner(event.getGenerator().getPackOutput(), event.getLookupProvider()));
         event.addProvider(new LootTableProvider(event.getGenerator().getPackOutput(), Set.of(), SUB_PROVIDER_ENTRIES, event.getLookupProvider()));
         event.addProvider(new ChemistriaEnUsProvider(event.getGenerator().getPackOutput()));
+        event.addProvider(new ChemistriaDataMapProvider(event.getGenerator().getPackOutput(), event.getLookupProvider()));
         event.createDatapackRegistryObjects(BUILDER);
     }
 
@@ -47,6 +50,7 @@ public final class ChemistriaDataGenerators {
         event.addProvider(new ChemistriaRecipeProvider.Runner(event.getGenerator().getPackOutput(), event.getLookupProvider()));
         event.addProvider(new LootTableProvider(event.getGenerator().getPackOutput(), Set.of(), SUB_PROVIDER_ENTRIES, event.getLookupProvider()));
         event.addProvider(new ChemistriaEnUsProvider(event.getGenerator().getPackOutput()));
+        event.addProvider(new ChemistriaDataMapProvider(event.getGenerator().getPackOutput(), event.getLookupProvider()));
         event.createDatapackRegistryObjects(BUILDER);
     }
 }

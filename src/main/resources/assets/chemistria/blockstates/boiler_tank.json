@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "chemistria:block/boiler_tank"
+    }
+  }
+}

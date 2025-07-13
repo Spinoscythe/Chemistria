@@ -20,6 +20,9 @@ public class ChemistriaBlockLoot extends BlockLootSubProvider {
     protected void generate() {
         this.dropSelf(ChemistriaBlocks.RAW_ONYX_BLOCK.get());
         this.dropSelf(ChemistriaBlocks.ONYX_BLOCK.get());
+        this.dropSelf(ChemistriaBlocks.PEAT_BLOCK.get());
+
+        this.dropSelf(ChemistriaBlocks.BOILER_TANK.get());
 
         this.add(ChemistriaBlocks.ONYX_ORE.get(), block -> createOreDrop(block, ChemistriaItems.RAW_ONYX.get()));
         this.add(ChemistriaBlocks.DEEPSLATE_ONYX_ORE.get(), block -> createOreDrop(block, ChemistriaItems.RAW_ONYX.get()));
